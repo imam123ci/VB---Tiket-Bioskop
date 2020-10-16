@@ -77,6 +77,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="details.Designer.vb">
+      <DependentUpon>details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormCetakTiket.Designer.vb">
       <DependentUpon>FormCetakTiket.vb</DependentUpon>
     </Compile>
@@ -107,6 +119,7 @@
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -129,8 +142,23 @@
     <Compile Include="SplashScreen1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="video.Designer.vb">
+      <DependentUpon>video.vb</DependentUpon>
+    </Compile>
+    <Compile Include="video.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="details.resx">
+      <DependentUpon>details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesan.resx">
+      <DependentUpon>FormPesan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -139,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="video.resx">
+      <DependentUpon>video.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +184,156 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\1kooza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\2corteo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\3thebeatles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\4mj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\5ka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\6alegria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\7o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="videos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\KAtrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\Alegriatrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\beatlestrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\Corteotrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\KOOZAtrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\MJtrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="video\Otrailer.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\KA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\KA2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\KA3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\MJ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\MJ2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\MJ3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\beatles1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\beatles2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\beatles3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kooza1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kooza2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\kooza3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\corteo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\corteo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\corteo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\O1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\O2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\O3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\alegria1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\alegria2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\alegria3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\wallpaper.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
