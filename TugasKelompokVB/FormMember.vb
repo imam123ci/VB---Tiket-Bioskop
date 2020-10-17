@@ -80,12 +80,12 @@ Public Class FormMember
         GenerateCaptcha()
     End Sub
 
-    Private Sub FormMember(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        GenerateCaptcha()
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MessageBox.Show("Tanggal Berhasil Dipilih!")
+    End Sub
+
+    Private Sub FormMember_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        GenerateCaptcha()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
