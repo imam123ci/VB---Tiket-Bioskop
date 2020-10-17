@@ -114,7 +114,4 @@ Public Class FormMember
         NotifyIcon1.ShowBalloonTip(3000)
     End Sub
 
-
-
 End Class
-
