@@ -156,6 +156,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMember.resx">
+      <DependentUpon>FormMember.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPesan.resx">
       <DependentUpon>FormPesan.vb</DependentUpon>
     </EmbeddedResource>
