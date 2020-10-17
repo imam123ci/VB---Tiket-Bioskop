@@ -86,9 +86,7 @@
     <Compile Include="FormCetakTiket.Designer.vb">
       <DependentUpon>FormCetakTiket.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCetakTiket.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="FormCetakTiket.vb" />
     <Compile Include="FormMember.Designer.vb">
       <DependentUpon>FormMember.vb</DependentUpon>
     </Compile>
@@ -146,6 +144,9 @@
   <ItemGroup>
     <EmbeddedResource Include="details.resx">
       <DependentUpon>details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCetakTiket.resx">
+      <DependentUpon>FormCetakTiket.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPembayaran.resx">
       <DependentUpon>FormPembayaran.vb</DependentUpon>
