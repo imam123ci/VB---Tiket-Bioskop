@@ -39,6 +39,7 @@ Public Class FormMember
         myFileStream.Close()
 
         NotifyIcon1.ShowBalloonTip(3000)
+
     End Sub
 
 End Class
