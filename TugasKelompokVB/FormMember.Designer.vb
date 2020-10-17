@@ -41,7 +41,6 @@ Partial Class FormMember
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
@@ -176,9 +175,11 @@ Partial Class FormMember
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = Global.TugasKelompokVB.My.Resources.Resources.captcha
         Me.PictureBox1.Location = New System.Drawing.Point(225, 299)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(311, 78)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 13
         Me.PictureBox1.TabStop = False
         '
@@ -207,15 +208,6 @@ Partial Class FormMember
         Me.Button2.TabIndex = 16
         Me.Button2.Text = "Cek"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(451, 383)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(81, 29)
-        Me.Button3.TabIndex = 17
-        Me.Button3.Text = "Refresh"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -253,7 +245,6 @@ Partial Class FormMember
         Me.ClientSize = New System.Drawing.Size(648, 535)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label7)
@@ -296,7 +287,6 @@ Partial Class FormMember
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents NotifyIcon1 As NotifyIcon
