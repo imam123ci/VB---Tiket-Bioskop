@@ -79,7 +79,7 @@ Partial Class SplashScreen1
         Me.Version.Name = "Version"
         Me.Version.Size = New System.Drawing.Size(241, 20)
         Me.Version.TabIndex = 1
-        Me.Version.Text = "Version 0.1"
+        Me.Version.Text = "Version 1.0"
         '
         'Copyright
         '
@@ -101,7 +101,7 @@ Partial Class SplashScreen1
         Me.ApplicationTitle.Name = "ApplicationTitle"
         Me.ApplicationTitle.Size = New System.Drawing.Size(247, 212)
         Me.ApplicationTitle.TabIndex = 0
-        Me.ApplicationTitle.Text = "Vera's Cinema"
+        Me.ApplicationTitle.Text = "The Vera Cinema"
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'SplashScreen1

@@ -50,6 +50,9 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -149,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCetakTiket.resx">
       <DependentUpon>FormCetakTiket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPembayaran.resx">
       <DependentUpon>FormPembayaran.vb</DependentUpon>
@@ -337,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\captcha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
