@@ -147,8 +147,14 @@
     <EmbeddedResource Include="details.resx">
       <DependentUpon>details.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCetakTiket.resx">
+      <DependentUpon>FormCetakTiket.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPembayaran.resx">
       <DependentUpon>FormPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMember.resx">
+      <DependentUpon>FormMember.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPesan.resx">
       <DependentUpon>FormPesan.vb</DependentUpon>
@@ -328,6 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\captcha.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
