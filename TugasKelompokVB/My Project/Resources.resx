@@ -143,24 +143,17 @@ that fill the audience with wonderful
 nostalgia and a message of LOVE.</value>
     <comment>beatles2</comment>
   </data>
-  <data name="String5" xml:space="preserve">
-    <value>Get carried away with life
-
-The clown Mauro has passed, but his spirit is still with us. Instead of 
-mourning, the funeral cortege celebrates the here and hereafter with 
-laughter and exuberance. Rich, extravagant memories frolic with the 
-senses.  The  sound  of  laughter  peals around the  stage, visions of 
-joyous tumblers and players fascinate the eyes. Regret and melancholy 
-retreat in the face of a cavalcade of lively recollections of a life gloriously
-lived. A festive parade that entertains; the perfect accolade for an artist 
-whose life was dedicated to revelry and making merry.</value>
-    <comment>Corteo</comment>
-  </data>
   <data name="KA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\KA3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beatles1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\beatles1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="String20" xml:space="preserve">
+    <value>Love’s majestic highs Bella! Bella! 
+The lovers of dead clown Mauro 
+gather to reminisce on a life jubilantly 
+lived. Lithe bodies channel bittersweet 
+memories as they dance suspended 
+from a grandiose chandelier.</value>
+    <comment>corteo1</comment>
   </data>
   <data name="String26" xml:space="preserve">
     <value>PLAYGROUND 
@@ -173,8 +166,21 @@ speed, until the ice turns into a
 giant pinball machine.</value>
     <comment>alegria1</comment>
   </data>
+  <data name="MJ3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\MJ3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Super. Sonic. Each of the theatre’s 
+1,804 seats has three speakers – left, 
+right and center – for a total of 5,412 
+seat speakers.</value>
+    <comment>MJ3</comment>
+  </data>
   <data name="KA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\KA2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="O1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\O1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="beatlestrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\video\beatlestrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -199,42 +205,6 @@ the studio with the band.”</value>
   <data name="MJ2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\MJ2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="alegria2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\alegria2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MJtrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\video\MJtrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="O2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\O2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\MJ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="String19" xml:space="preserve">
-    <value>Double Highwire Twin 
-highwires criss-cross diagonally at 15 
-and 25 feet above the stage.</value>
-    <comment>kooza3</comment>
-  </data>
-  <data name="Otrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\video\Otrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="alegria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\alegria1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="corteo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\corteo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="String18" xml:space="preserve">
-    <value>Wheel of Death 
-
-The crowd holds its collective breath.
-Can the astonishingly brave performers 
-somehow tame the enormous spinning 
-contraption?</value>
-    <comment>kooza2</comment>
-  </data>
   <data name="String9" xml:space="preserve">
     <value>A never-before imagined stage, 
 the steepest challenge faced on
@@ -245,18 +215,52 @@ earth becomes  the  sky,  only the
 truly courageous can prevail.</value>
     <comment>KA2</comment>
   </data>
-  <data name="String4" xml:space="preserve">
-    <value>A Traditional Circus Homage
-
-A return to our origins, KOOZA combines acrobatic performance and 
-the art of clowning, while exploring fear, identity, recognition and power. 
-The Innocent's journey brings him into contact with comic characters 
-from  an  electrifying  world full  of surprises, thrills,  audacity  and  total 
-involvement.</value>
-    <comment>KOOZA</comment>
+  <data name="beatles3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\beatles3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MJtrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\video\MJtrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="O2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\O2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\MJ1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5ka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\5ka.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6alegria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\6alegria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alegria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\alegria1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corteo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\corteo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4mj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\4mj.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Alegriatrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\video\Alegriatrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Gravity  defied,   enemies confronted,   noble  combat   becomes 
+acrobatic.
+
+War   has  never  been  fought  this  way. A  colossal, moving stage 
+is the battlefield. Up is down, land becomes sky. These dimension-
+bending confrontations redefine what it means to fight.
+
+Bodies  full of   strength,  glowing with light and heat. Minds  as bright 
+and clear as the vast heavens, the great ocean, and the highest peak.
+
+Determination is the path, victory the reward.</value>
+    <comment>KÀ</comment>
   </data>
   <data name="String16" xml:space="preserve">
     <value>YESTERDAY 
@@ -282,14 +286,10 @@ Jackson ONE.</value>
   <data name="KA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\KA1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="String6" xml:space="preserve">
-    <value>Experience an Aquatic Masterpiece
-
-Weaving a tapestry of artistry, surrealism and theatrical romance, 'O' 
-pays tribute to the beauty of theatre. Inspired by the concept of infinity 
-and the elegance of water, world-class acrobats, synchronized swimmers 
-and divers create a breathtaking experience.</value>
-    <comment>O</comment>
+  <data name="String17" xml:space="preserve">
+    <value>Skeleton Dance A crazy
+choreographed trip to the dark side.</value>
+    <comment>kooza1</comment>
   </data>
   <data name="String25" xml:space="preserve">
     <value>Underwater 
@@ -323,10 +323,14 @@ contraption  tests a  warrior’s  true
 courage.</value>
     <comment>KA3</comment>
   </data>
-  <data name="String17" xml:space="preserve">
-    <value>Skeleton Dance A crazy
-choreographed trip to the dark side.</value>
-    <comment>kooza1</comment>
+  <data name="String18" xml:space="preserve">
+    <value>Wheel of Death 
+
+The crowd holds its collective breath.
+Can the astonishingly brave performers 
+somehow tame the enormous spinning 
+contraption?</value>
+    <comment>kooza2</comment>
   </data>
   <data name="String28" xml:space="preserve">
     <value>TEMPÊTE 
@@ -339,14 +343,8 @@ with jumps, flips, spins and gliding on
 blades.</value>
     <comment>alegria3</comment>
   </data>
-  <data name="String20" xml:space="preserve">
-    <value>Love’s majestic highs Bella! Bella! 
-The lovers of dead clown Mauro 
-gather to reminisce on a life jubilantly 
-lived. Lithe bodies channel bittersweet 
-memories as they dance suspended 
-from a grandiose chandelier.</value>
-    <comment>corteo1</comment>
+  <data name="alegria3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\alegria3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_1kooza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\1kooza.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -362,17 +360,14 @@ Flyers and catchers display incredible
 timing.</value>
     <comment>O1</comment>
   </data>
-  <data name="_6alegria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\6alegria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="O1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\O1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Otrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\video\Otrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="_2corteo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\2corteo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5ka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\5ka.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alegria2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\alegria2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_7o" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\7o.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -420,35 +415,33 @@ remains as poignant and relevant today
 as when it first took audiences by storm.</value>
     <comment>MJ2</comment>
   </data>
-  <data name="String14" xml:space="preserve">
-    <value>Strawberry Fields Forever 
-
-A new dimension of strangeness 
-and magic.</value>
-    <comment>beatles1</comment>
-  </data>
   <data name="beatles2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\beatles2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beatles3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\beatles3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="String4" xml:space="preserve">
+    <value>A Traditional Circus Homage
+
+A return to our origins, KOOZA combines acrobatic performance and 
+the art of clowning, while exploring fear, identity, recognition and power. 
+The Innocent's journey brings him into contact with comic characters 
+from  an  electrifying  world full  of surprises, thrills,  audacity  and  total 
+involvement.</value>
+    <comment>KOOZA</comment>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value>Gravity  defied,   enemies confronted,   noble  combat   becomes 
-acrobatic.
+  <data name="String6" xml:space="preserve">
+    <value>Experience an Aquatic Masterpiece
 
-War   has  never  been  fought  this  way. A  colossal, moving stage 
-is the battlefield. Up is down, land becomes sky. These dimension-
-bending confrontations redefine what it means to fight.
-
-Bodies  full of   strength,  glowing with light and heat. Minds  as bright 
-and clear as the vast heavens, the great ocean, and the highest peak.
-
-Determination is the path, victory the reward.</value>
-    <comment>KÀ</comment>
+Weaving a tapestry of artistry, surrealism and theatrical romance, 'O' 
+pays tribute to the beauty of theatre. Inspired by the concept of infinity 
+and the elegance of water, world-class acrobats, synchronized swimmers 
+and divers create a breathtaking experience.</value>
+    <comment>O</comment>
   </data>
   <data name="corteo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\corteo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KOOZAtrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\video\KOOZAtrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="String24" xml:space="preserve">
     <value>Fire 
@@ -459,29 +452,39 @@ then displayed in this brilliantly visual
 act.</value>
     <comment>O2</comment>
   </data>
-  <data name="String13" xml:space="preserve">
-    <value>Super. Sonic. Each of the theatre’s 
-1,804 seats has three speakers – left, 
-right and center – for a total of 5,412 
-seat speakers.</value>
-    <comment>MJ3</comment>
+  <data name="String14" xml:space="preserve">
+    <value>Strawberry Fields Forever 
+
+A new dimension of strangeness 
+and magic.</value>
+    <comment>beatles1</comment>
   </data>
-  <data name="_4mj" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\4mj.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="beatles1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\beatles1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MJ3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\MJ3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="String19" xml:space="preserve">
+    <value>Double Highwire Twin 
+highwires criss-cross diagonally at 15 
+and 25 feet above the stage.</value>
+    <comment>kooza3</comment>
   </data>
-  <data name="KOOZAtrailer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\video\KOOZAtrailer.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="alegria3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\alegria3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="String5" xml:space="preserve">
+    <value>Get carried away with life
+
+The clown Mauro has passed, but his spirit is still with us. Instead of 
+mourning, the funeral cortege celebrates the here and hereafter with 
+laughter and exuberance. Rich, extravagant memories frolic with the 
+senses.  The  sound  of  laughter  peals around the  stage, visions of 
+joyous tumblers and players fascinate the eyes. Regret and melancholy 
+retreat in the face of a cavalcade of lively recollections of a life gloriously
+lived. A festive parade that entertains; the perfect accolade for an artist 
+whose life was dedicated to revelry and making merry.</value>
+    <comment>Corteo</comment>
   </data>
   <data name="corteo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\corteo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="captcha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\captcha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
