@@ -15,7 +15,7 @@
 
             Label3.Text = "KÀ"
             Label4.Text = My.Resources.String1
-            Module1.Waktu = "Saturday 02:00 PM – 5:00 PM"
+            Waktu.Text = "Saturday 02:00 PM – 5:00 PM"
         End If
 
         If Module1.NamaSirkus = "Michael Jackson ONE" Then
@@ -23,7 +23,7 @@
 
             Label3.Text = "Michael Jackson ONE"
             Label4.Text = My.Resources.String2
-            Module1.Waktu = "Friday 12:30 PM – 04:00 PM"
+            Waktu.Text = "Friday 12:30 PM – 04:00 PM"
         End If
 
         If Module1.NamaSirkus = "The Beatles LOVE" Then
@@ -31,7 +31,7 @@
 
             Label3.Text = "The Beatles LOVE"
             Label4.Text = My.Resources.String3
-            Module1.Waktu = "Sunday  10:30 AM – 01:00 PM"
+            Waktu.Text = "Sunday  10:30 AM – 01:00 PM"
         End If
 
         If Module1.NamaSirkus = "KOOZA" Then
@@ -39,7 +39,7 @@
 
             Label3.Text = "KOOZA"
             Label4.Text = My.Resources.String4
-            Module1.Waktu = "Thursday 02:00 PM to 05:30 PM"
+            Waktu.Text = "Thursday 02:00 PM to 05:30 PM"
         End If
 
         If Module1.NamaSirkus = "Corteo" Then
@@ -47,7 +47,7 @@
 
             Label3.Text = "Corteo"
             Label4.Text = My.Resources.String5
-            Module1.Waktu = "Wednesday 02:00 PM – 5:00 PM"
+            Waktu.Text = "Wednesday 02:00 PM – 5:00 PM"
         End If
 
         If Module1.NamaSirkus = "O" Then
@@ -55,7 +55,7 @@
 
             Label3.Text = "O"
             Label4.Text = My.Resources.String6
-            Module1.Waktu = "Tuesday 12:30 PM – 04:00 PM"
+            Waktu.Text = "Tuesday 12:30 PM – 04:00 PM"
         End If
 
         If Module1.NamaSirkus = "Alegria" Then
@@ -63,7 +63,7 @@
 
             Label3.Text = "Alegria"
             Label4.Text = My.Resources.String7
-            Module1.Waktu = "Monday 02:00 PM – 5:00 PM"
+            Waktu.Text = "Monday 02:00 PM – 5:00 PM"
         End If
     End Sub
 
