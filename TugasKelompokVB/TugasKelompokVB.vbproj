@@ -77,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DashboardKB.Designer.vb">
+      <DependentUpon>DashboardKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="details.Designer.vb">
       <DependentUpon>details.vb</DependentUpon>
     </Compile>
@@ -136,10 +142,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="sirkusdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirkusdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sirkusdbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sirkusdbDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen1.Designer.vb">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateKB.Designer.vb">
+      <DependentUpon>UpdateKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateKB.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="video.Designer.vb">
@@ -150,6 +172,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DashboardKB.resx">
+      <DependentUpon>DashboardKB.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="details.resx">
       <DependentUpon>details.vb</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateKB.resx">
+      <DependentUpon>UpdateKB.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="video.resx">
       <DependentUpon>video.vb</DependentUpon>
@@ -249,6 +277,28 @@
     <Folder Include="videos\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="sirkusdbDataSet.xsc">
+      <DependentUpon>sirkusdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sirkusdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirkusdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirkusdbDataSet.xss">
+      <DependentUpon>sirkusdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sirkusdbDataSet1.xsc">
+      <DependentUpon>sirkusdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sirkusdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sirkusdbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sirkusdbDataSet1.xss">
+      <DependentUpon>sirkusdbDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="video\KAtrailer.mp4" />
   </ItemGroup>
   <ItemGroup>

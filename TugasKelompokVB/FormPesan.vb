@@ -1,5 +1,7 @@
 ﻿Public Class FormPesan
     Private Sub FormPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'SirkusdbDataSet.pesan' table. You can move, or remove it, as needed.
+        'TODO: This line of code loads data into the 'SirkusdbDataSet.waktu_sirkus' table. You can move, or remove it, as needed.
         Timer1.Enabled = True
     End Sub
 
