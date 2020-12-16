@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.TugasKelompokVB.FormMember
+            Me.MainForm = Global.TugasKelompokVB.UpdateKB
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
