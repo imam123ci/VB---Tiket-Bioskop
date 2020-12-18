@@ -7,4 +7,9 @@
         Me.Hide()
         UpdateKB.Show()
     End Sub
+
+    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
+        Me.Hide()
+        FormLogin.Show()
+    End Sub
 End Class
