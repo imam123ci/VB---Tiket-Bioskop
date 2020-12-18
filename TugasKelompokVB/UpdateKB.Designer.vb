@@ -23,12 +23,6 @@ Partial Class UpdateKB
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.SirkusIdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JudulDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SinopsisDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PosterDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VideoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SirkusBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.SirkusdbDataSet1 = New TugasKelompokVB.sirkusdbDataSet1()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -46,18 +40,8 @@ Partial Class UpdateKB
         Me.SirkusTableAdapter = New TugasKelompokVB.sirkusdbDataSet1TableAdapters.sirkusTableAdapter()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.WaktusirkusIdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SirkusIdDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JamMulaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JamSelesaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.WaktusirkusBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Waktu_sirkusTableAdapter = New TugasKelompokVB.sirkusdbDataSet1TableAdapters.waktu_sirkusTableAdapter()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
-        Me.DetailsirkusIdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SirkusIdDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GambarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KeteranganDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DetailsirkusBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Detail_sirkusTableAdapter = New TugasKelompokVB.sirkusdbDataSet1TableAdapters.detail_sirkusTableAdapter()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -80,68 +64,14 @@ Partial Class UpdateKB
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SirkusBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SirkusdbDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WaktusirkusBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailsirkusBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.SirkusIdDataGridViewTextBoxColumn, Me.JudulDataGridViewTextBoxColumn, Me.SinopsisDataGridViewTextBoxColumn, Me.PosterDataGridViewTextBoxColumn, Me.VideoDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.SirkusBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(1082, 166)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'SirkusIdDataGridViewTextBoxColumn
-        '
-        Me.SirkusIdDataGridViewTextBoxColumn.DataPropertyName = "sirkusId"
-        Me.SirkusIdDataGridViewTextBoxColumn.HeaderText = "sirkusId"
-        Me.SirkusIdDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.SirkusIdDataGridViewTextBoxColumn.Name = "SirkusIdDataGridViewTextBoxColumn"
-        Me.SirkusIdDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'JudulDataGridViewTextBoxColumn
-        '
-        Me.JudulDataGridViewTextBoxColumn.DataPropertyName = "judul"
-        Me.JudulDataGridViewTextBoxColumn.HeaderText = "judul"
-        Me.JudulDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.JudulDataGridViewTextBoxColumn.Name = "JudulDataGridViewTextBoxColumn"
-        '
-        'SinopsisDataGridViewTextBoxColumn
-        '
-        Me.SinopsisDataGridViewTextBoxColumn.DataPropertyName = "sinopsis"
-        Me.SinopsisDataGridViewTextBoxColumn.HeaderText = "sinopsis"
-        Me.SinopsisDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.SinopsisDataGridViewTextBoxColumn.Name = "SinopsisDataGridViewTextBoxColumn"
-        '
-        'PosterDataGridViewTextBoxColumn
-        '
-        Me.PosterDataGridViewTextBoxColumn.DataPropertyName = "poster"
-        Me.PosterDataGridViewTextBoxColumn.HeaderText = "poster"
-        Me.PosterDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.PosterDataGridViewTextBoxColumn.Name = "PosterDataGridViewTextBoxColumn"
-        '
-        'VideoDataGridViewTextBoxColumn
-        '
-        Me.VideoDataGridViewTextBoxColumn.DataPropertyName = "video"
-        Me.VideoDataGridViewTextBoxColumn.HeaderText = "video"
-        Me.VideoDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.VideoDataGridViewTextBoxColumn.Name = "VideoDataGridViewTextBoxColumn"
         '
         'SirkusBindingSource
         '
@@ -278,50 +208,6 @@ Partial Class UpdateKB
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tabel Sirkus"
         '
-        'DataGridView2
-        '
-        Me.DataGridView2.AutoGenerateColumns = False
-        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.WaktusirkusIdDataGridViewTextBoxColumn, Me.SirkusIdDataGridViewTextBoxColumn1, Me.JamMulaiDataGridViewTextBoxColumn, Me.JamSelesaiDataGridViewTextBoxColumn})
-        Me.DataGridView2.DataSource = Me.WaktusirkusBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(12, 184)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowHeadersWidth = 62
-        Me.DataGridView2.RowTemplate.Height = 28
-        Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView2.Size = New System.Drawing.Size(516, 159)
-        Me.DataGridView2.TabIndex = 14
-        '
-        'WaktusirkusIdDataGridViewTextBoxColumn
-        '
-        Me.WaktusirkusIdDataGridViewTextBoxColumn.DataPropertyName = "waktu_sirkusId"
-        Me.WaktusirkusIdDataGridViewTextBoxColumn.HeaderText = "waktu_sirkusId"
-        Me.WaktusirkusIdDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.WaktusirkusIdDataGridViewTextBoxColumn.Name = "WaktusirkusIdDataGridViewTextBoxColumn"
-        Me.WaktusirkusIdDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'SirkusIdDataGridViewTextBoxColumn1
-        '
-        Me.SirkusIdDataGridViewTextBoxColumn1.DataPropertyName = "sirkusId"
-        Me.SirkusIdDataGridViewTextBoxColumn1.HeaderText = "sirkusId"
-        Me.SirkusIdDataGridViewTextBoxColumn1.MinimumWidth = 8
-        Me.SirkusIdDataGridViewTextBoxColumn1.Name = "SirkusIdDataGridViewTextBoxColumn1"
-        '
-        'JamMulaiDataGridViewTextBoxColumn
-        '
-        Me.JamMulaiDataGridViewTextBoxColumn.DataPropertyName = "jamMulai"
-        Me.JamMulaiDataGridViewTextBoxColumn.HeaderText = "jamMulai"
-        Me.JamMulaiDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.JamMulaiDataGridViewTextBoxColumn.Name = "JamMulaiDataGridViewTextBoxColumn"
-        '
-        'JamSelesaiDataGridViewTextBoxColumn
-        '
-        Me.JamSelesaiDataGridViewTextBoxColumn.DataPropertyName = "jamSelesai"
-        Me.JamSelesaiDataGridViewTextBoxColumn.HeaderText = "jamSelesai"
-        Me.JamSelesaiDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.JamSelesaiDataGridViewTextBoxColumn.Name = "JamSelesaiDataGridViewTextBoxColumn"
-        '
         'WaktusirkusBindingSource
         '
         Me.WaktusirkusBindingSource.DataMember = "waktu_sirkus"
@@ -330,50 +216,6 @@ Partial Class UpdateKB
         'Waktu_sirkusTableAdapter
         '
         Me.Waktu_sirkusTableAdapter.ClearBeforeFill = True
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.AutoGenerateColumns = False
-        Me.DataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DetailsirkusIdDataGridViewTextBoxColumn, Me.SirkusIdDataGridViewTextBoxColumn2, Me.GambarDataGridViewTextBoxColumn, Me.KeteranganDataGridViewTextBoxColumn})
-        Me.DataGridView3.DataSource = Me.DetailsirkusBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(534, 184)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.RowHeadersWidth = 62
-        Me.DataGridView3.RowTemplate.Height = 28
-        Me.DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView3.Size = New System.Drawing.Size(560, 159)
-        Me.DataGridView3.TabIndex = 15
-        '
-        'DetailsirkusIdDataGridViewTextBoxColumn
-        '
-        Me.DetailsirkusIdDataGridViewTextBoxColumn.DataPropertyName = "detail_sirkusId"
-        Me.DetailsirkusIdDataGridViewTextBoxColumn.HeaderText = "detail_sirkusId"
-        Me.DetailsirkusIdDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.DetailsirkusIdDataGridViewTextBoxColumn.Name = "DetailsirkusIdDataGridViewTextBoxColumn"
-        Me.DetailsirkusIdDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'SirkusIdDataGridViewTextBoxColumn2
-        '
-        Me.SirkusIdDataGridViewTextBoxColumn2.DataPropertyName = "sirkusId"
-        Me.SirkusIdDataGridViewTextBoxColumn2.HeaderText = "sirkusId"
-        Me.SirkusIdDataGridViewTextBoxColumn2.MinimumWidth = 8
-        Me.SirkusIdDataGridViewTextBoxColumn2.Name = "SirkusIdDataGridViewTextBoxColumn2"
-        '
-        'GambarDataGridViewTextBoxColumn
-        '
-        Me.GambarDataGridViewTextBoxColumn.DataPropertyName = "gambar"
-        Me.GambarDataGridViewTextBoxColumn.HeaderText = "gambar"
-        Me.GambarDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.GambarDataGridViewTextBoxColumn.Name = "GambarDataGridViewTextBoxColumn"
-        '
-        'KeteranganDataGridViewTextBoxColumn
-        '
-        Me.KeteranganDataGridViewTextBoxColumn.DataPropertyName = "keterangan"
-        Me.KeteranganDataGridViewTextBoxColumn.HeaderText = "keterangan"
-        Me.KeteranganDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.KeteranganDataGridViewTextBoxColumn.Name = "KeteranganDataGridViewTextBoxColumn"
         '
         'DetailsirkusBindingSource
         '
@@ -578,21 +420,15 @@ Partial Class UpdateKB
         Me.ClientSize = New System.Drawing.Size(1102, 775)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.DataGridView3)
-        Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button4)
         Me.Name = "UpdateKB"
         Me.Text = "UpdateKB"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SirkusBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SirkusdbDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.WaktusirkusBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DetailsirkusBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
@@ -601,8 +437,6 @@ Partial Class UpdateKB
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
@@ -618,27 +452,12 @@ Partial Class UpdateKB
     Friend WithEvents SirkusdbDataSet1 As sirkusdbDataSet1
     Friend WithEvents SirkusBindingSource As BindingSource
     Friend WithEvents SirkusTableAdapter As sirkusdbDataSet1TableAdapters.sirkusTableAdapter
-    Friend WithEvents SirkusIdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents JudulDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SinopsisDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents PosterDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents VideoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents WaktusirkusBindingSource As BindingSource
     Friend WithEvents Waktu_sirkusTableAdapter As sirkusdbDataSet1TableAdapters.waktu_sirkusTableAdapter
-    Friend WithEvents WaktusirkusIdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SirkusIdDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents JamMulaiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents JamSelesaiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridView3 As DataGridView
     Friend WithEvents DetailsirkusBindingSource As BindingSource
     Friend WithEvents Detail_sirkusTableAdapter As sirkusdbDataSet1TableAdapters.detail_sirkusTableAdapter
-    Friend WithEvents DetailsirkusIdDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SirkusIdDataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents GambarDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents KeteranganDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Label5 As Label
