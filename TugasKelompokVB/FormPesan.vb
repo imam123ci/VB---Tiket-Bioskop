@@ -1,114 +1,114 @@
-﻿Public Class FormPesan
+﻿Imports System.Data.SqlClient
+Imports System.IO
+Public Class FormPesan
+
+    Private conn As SqlConnection
+    Private cmd As SqlCommand
+    Private reader As SqlDataReader
+    Private results As String
+    Private varbinary As Byte()
+    Private photoStream As New MemoryStream()
 
     Private Sub FormPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'SirkusdbDataSet.sirkus' table. You can move, or remove it, as needed.
+        Me.SirkusTableAdapter.Fill(Me.SirkusdbDataSet.sirkus)
+        'TODO: This line of code loads data into the 'SirkusdbDataSet.bangku_sirkus' table. You can move, or remove it, as needed.
+        Me.Bangku_sirkusTableAdapter.Fill(Me.SirkusdbDataSet.bangku_sirkus)
+        'TODO: This line of code loads data into the 'SirkusdbDataSet.waktu_sirkus' table. You can move, or remove it, as needed.
+        Me.Waktu_sirkusTableAdapter.Fill(Me.SirkusdbDataSet.waktu_sirkus)
+        'TODO: This line of code loads data into the 'SirkusdbDataSet.pesan' table. You can move, or remove it, as needed.
+        ' Me.PesanTableAdapter.Fill(Me.SirkusdbDataSet.pesan)
         Timer1.Enabled = True
+        'initialize new connection
+        'ganti connection string dengan yg ada
+        conn = New SqlConnection("Data Source=62.171.164.73;Initial Catalog=sirkusdb;Persist Security Info=True;User ID=bigpho;Password=bigphovera")
+        conn.Open()
+        'Make SQL Statement variable
+        cmd = conn.CreateCommand()
+    End Sub
+
+    Private Sub FormPesan_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        'Close SQL Connection
+        conn.Close()
     End Sub
 
     'Tab Page 1
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Label1.Text = Date.Now.ToString("dd MMM yyy   hh:mm:ss")
+        Module1.Waktu = Label1.Text
     End Sub
     Private Sub ComboBoxNamaSirkus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNamaSirkus.SelectedIndexChanged
-        Module1.NamaSirkus = ComboBoxNamaSirkus.SelectedItem
+        Module1.NamaSirkus = ComboBoxNamaSirkus.SelectedValue
+        Label3.Text = ComboBoxNamaSirkus.SelectedValue
+
+        'cmd.CommandText = "SELECT TOP 1 poster from sirkus ORDER BY id DESC "
+        'Dim img As Image
+        'Create new variable to store byte data
+        'Dim ImageData As Byte()
+        'ImageData = DirectCast(cmd.ExecuteScalar(), Byte())
+        'Using ms As New MemoryStream(ImageData)
+        'img = Image.FromStream(ms)
+        'End Using
+        'PictureBox1.Image = img
+
+        cmd.Parameters.Clear()
+        cmd.CommandText = "select * from sirkus where judul = @judul"
+        cmd.Parameters.AddWithValue("@judul", ComboBoxNamaSirkus.SelectedValue)
+        reader = cmd.ExecuteReader()
+
+        While reader.Read()
+            If reader.HasRows = True Then
+                Label4.Text = reader.GetString(2)
+            End If
+        End While
+        reader.Close()
+
+        'cmd.Parameters.Clear()
+        'Dim sSQL As String = "select concat(hari,', ',jamMulai,'-',jamSelesai) from waktu_sirkus  join sirkus ON sirkus.sirkusId = waktu_sirkus.sirkusId WHERE sirkus.sirkusId = waktu_sirkus.sirkusId "
+        'cmd.CommandText = sSQL
+        'reader = cmd.ExecuteReader()
+        'Waktu.Text = sSQL
+        'reader.Close()
+
         If Module1.NamaSirkus = "KÀ" Then
             PictureBox1.Image = My.Resources._5ka
-
-            Label3.Text = "KÀ"
-            Label4.Text = My.Resources.String1
-            Waktu.Text = "Saturday 02:00 PM – 5:00 PM"
+            Waktu.Text = "Saturday – Wednesday 10:00 AM – 10:00 PM" & vbCrLf & "Thursday – Friday 10:00 AM – 5:00 PM"
         End If
 
         If Module1.NamaSirkus = "Michael Jackson ONE" Then
             PictureBox1.Image = My.Resources._4mj
-
-            Label3.Text = "Michael Jackson ONE"
-            Label4.Text = My.Resources.String2
-            Waktu.Text = "Friday 12:30 PM – 04:00 PM"
+            Waktu.Text = "Friday - Tuesday 10:00 AM – 10:00 PM" & vbCrLf & "Wednesday and Thursday 12:30 PM – 6:00 PM"
         End If
 
         If Module1.NamaSirkus = "The Beatles LOVE" Then
             PictureBox1.Image = My.Resources._3thebeatles
-
-            Label3.Text = "The Beatles LOVE"
-            Label4.Text = My.Resources.String3
-            Waktu.Text = "Sunday  10:30 AM – 01:00 PM"
+            Waktu.Text = "Tuesday – Saturday 10AM – 10PM" & vbCrLf & "Sunday – Monday 10AM – 5PM"
         End If
 
         If Module1.NamaSirkus = "KOOZA" Then
             PictureBox1.Image = My.Resources._1kooza
-
-            Label3.Text = "KOOZA"
-            Label4.Text = My.Resources.String4
-            Waktu.Text = "Thursday 02:00 PM to 05:30 PM"
+            Waktu.Text = "Thursday 12:00 PM to 6:00 PM" & vbCrLf & "Friday 10:00 AM to 6:00 PM"
         End If
 
         If Module1.NamaSirkus = "Corteo" Then
             PictureBox1.Image = My.Resources._2corteo
-
-            Label3.Text = "Corteo"
-            Label4.Text = My.Resources.String5
-            Waktu.Text = "Wednesday 02:00 PM – 5:00 PM"
+            Waktu.Text = "Saturday - Wednesday 10:00 AM – 10:00 PM"
         End If
 
         If Module1.NamaSirkus = "O" Then
             PictureBox1.Image = My.Resources._7o
-
-            Label3.Text = "O"
-            Label4.Text = My.Resources.String6
-            Waktu.Text = "Tuesday 12:30 PM – 04:00 PM"
+            Waktu.Text = "Wednesday - Sunday 9:00 AM – 10:00 PM" & vbCrLf & "Monday - Tuesday 9:00 AM – 5:00 PM"
         End If
 
         If Module1.NamaSirkus = "Alegria" Then
             PictureBox1.Image = My.Resources._6alegria
-
-            Label3.Text = "Alegria"
-            Label4.Text = My.Resources.String7
-            Waktu.Text = "Monday 02:00 PM – 5:00 PM"
+            Waktu.Text = "Friday - Tuesday 10:00 AM - 10:30 PM"
         End If
+
+
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If Module1.NamaSirkus = "KÀ" Then
-            Dim form2 As New Video("KÀ")
-            form2.Text = "Trailer Video KÀ"
-            Call form2.Show()
-        End If
-        If Module1.NamaSirkus = "Michael Jackson ONE" Then
-            Dim form2 As New Video("Michael Jackson ONE")
-            form2.Text = "Trailer Video Michael Jackson ONE"
-            Call form2.Show()
-        End If
 
-        If Module1.NamaSirkus = "The Beatles LOVE" Then
-            Dim form2 As New Video("The Beatles LOVE")
-            form2.Text = "Trailer Video The Beatles LOVE"
-            Call form2.Show()
-        End If
-
-        If Module1.NamaSirkus = "Alegria" Then
-            Dim form2 As New Video("Alegria")
-            form2.Text = "Trailer Video Alegria"
-            Call form2.Show()
-        End If
-
-        If Module1.NamaSirkus = "KOOZA" Then
-            Dim form2 As New Video("KOOZA")
-            form2.Text = "Trailer Video KOOZA"
-            Call form2.Show()
-        End If
-
-        If Module1.NamaSirkus = "Corteo" Then
-            Dim form2 As New Video("Corteo")
-            form2.Text = "Trailer Video Corteo"
-            Call form2.Show()
-        End If
-
-        If Module1.NamaSirkus = "O" Then
-            Dim form2 As New Video("O")
-            form2.Text = "Trailer Video O"
-            Call form2.Show()
-        End If
-    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If Module1.NamaSirkus = "KÀ" Then
@@ -157,34 +157,35 @@
 
     'Tab Page 2
     Private Function Hitung_Harga() As Integer
-        If Module1.JenisTiket = "VIP" Then
-            Module1.TotalHarga = Val(2000000) * Module1.BanyakTiket
-        End If
-        If Module1.JenisTiket = "CAT1" Then
-            Module1.TotalHarga = Val(1500000) * Module1.BanyakTiket
-        End If
-        If Module1.JenisTiket = "CAT2" Then
-            Module1.TotalHarga = Val(1000000) * Module1.BanyakTiket
-        End If
-        If Module1.JenisTiket = "CAT3" Then
-            Module1.TotalHarga = Val(800000) * Module1.BanyakTiket
-        End If
-        If Module1.JenisTiket = "CAT4" Then
-            Module1.TotalHarga = Val(600000) * Module1.BanyakTiket
-        End If
-        Return (Module1.TotalHarga)
+
+        Module1.BanyakTiket = BanyakTiket.Value
+        Module1.JenisTiket = JenisTiket.SelectedValue
+        Dim total As Integer
+        Dim harga As Integer
+        cmd.Parameters.Clear()
+        cmd.CommandText = "select * from bangku_sirkus where bangku = @bangku"
+        cmd.Parameters.AddWithValue("@bangku", JenisTiket.SelectedValue)
+        reader = cmd.ExecuteReader()
+
+        While reader.Read()
+            If reader.HasRows = True Then
+                harga = reader.GetValue(4)
+                total = harga * BanyakTiket.Value
+            End If
+        End While
+        LabelTotalHarga.Text = total.ToString
+        reader.Close()
+        Module1.TotalHarga = LabelTotalHarga.Text
+        'cmd.Parameters.Clear()
+        '"EXEC SisaKursi @bangkuId=1"
+
+        Return (LabelTotalHarga.Text)
     End Function
 
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
 
-    End Sub
-
-    Private Sub JenisTiket_Click(sender As Object, e As EventArgs) Handles LabelTotalHarga.Click
-
-    End Sub
 
     Private Sub JenisTiket_SelectedIndexChanged(sender As Object, e As EventArgs) Handles JenisTiket.SelectedIndexChanged
-        Module1.JenisTiket = JenisTiket.SelectedItem
+        Module1.JenisTiket = JenisTiket.SelectedValue
         LabelTotalHarga.Text = Hitung_Harga()
     End Sub
 
