@@ -143,11 +143,11 @@ Partial Class FormPesan
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.SirkusIdDataGridViewTextBoxColumn2, Me.JudulDataGridViewTextBoxColumn, Me.SinopsisDataGridViewTextBoxColumn, Me.VideoDataGridViewTextBoxColumn, Me.PosterDataGridViewImageColumn})
         Me.DataGridView3.DataSource = Me.SirkusBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(357, 139)
+        Me.DataGridView3.Location = New System.Drawing.Point(309, 8)
         Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowHeadersWidth = 51
-        Me.DataGridView3.Size = New System.Drawing.Size(724, 133)
+        Me.DataGridView3.Size = New System.Drawing.Size(49, 51)
         Me.DataGridView3.TabIndex = 16
         Me.DataGridView3.Visible = False
         '
@@ -208,11 +208,11 @@ Partial Class FormPesan
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.WaktusirkusIdDataGridViewTextBoxColumn, Me.SirkusIdDataGridViewTextBoxColumn, Me.JamMulaiDataGridViewTextBoxColumn, Me.JamSelesaiDataGridViewTextBoxColumn, Me.HariDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.WaktusirkusBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(279, 156)
+        Me.DataGridView1.Location = New System.Drawing.Point(641, 8)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(719, 185)
+        Me.DataGridView1.Size = New System.Drawing.Size(107, 84)
         Me.DataGridView1.TabIndex = 15
         Me.DataGridView1.Visible = False
         '
@@ -430,11 +430,11 @@ Partial Class FormPesan
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.BangkusirkusIdDataGridViewTextBoxColumn, Me.SirkusIdDataGridViewTextBoxColumn1, Me.BangkuDataGridViewTextBoxColumn, Me.KapasitasDataGridViewTextBoxColumn, Me.HargaDataGridViewTextBoxColumn})
         Me.DataGridView2.DataSource = Me.BangkusirkusBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(23, 91)
+        Me.DataGridView2.Location = New System.Drawing.Point(4, 0)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.Size = New System.Drawing.Size(720, 185)
+        Me.DataGridView2.Size = New System.Drawing.Size(70, 60)
         Me.DataGridView2.TabIndex = 15
         Me.DataGridView2.Visible = False
         '
@@ -566,7 +566,7 @@ Partial Class FormPesan
         'JenisTiket
         '
         Me.JenisTiket.BackColor = System.Drawing.Color.Brown
-        Me.JenisTiket.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.BangkusirkusBindingSource1, "bangku", True))
+        Me.JenisTiket.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.BangkusirkusBindingSource1, "bangku_sirkusId", True))
         Me.JenisTiket.DataSource = Me.BangkusirkusBindingSource1
         Me.JenisTiket.DisplayMember = "bangku"
         Me.JenisTiket.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -577,7 +577,7 @@ Partial Class FormPesan
         Me.JenisTiket.Name = "JenisTiket"
         Me.JenisTiket.Size = New System.Drawing.Size(160, 35)
         Me.JenisTiket.TabIndex = 7
-        Me.JenisTiket.ValueMember = "bangku"
+        Me.JenisTiket.ValueMember = "bangku_sirkusId"
         '
         'BangkusirkusBindingSource1
         '

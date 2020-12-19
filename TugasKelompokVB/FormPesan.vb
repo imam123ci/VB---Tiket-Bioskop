@@ -1,4 +1,5 @@
-﻿Imports System.Data.SqlClient
+﻿Imports System.ComponentModel
+Imports System.Data.SqlClient
 Imports System.IO
 Public Class FormPesan
 
@@ -7,6 +8,7 @@ Public Class FormPesan
     Private reader As SqlDataReader
     Private results As String
     Private varbinary As Byte()
+    Private HargaTiket As Integer = 0
 
     Private Sub FormPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'SirkusdbDataSet.sirkus' table. You can move, or remove it, as needed.
@@ -38,18 +40,15 @@ Public Class FormPesan
     End Sub
     Private Sub ComboBoxNamaSirkus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNamaSirkus.SelectedIndexChanged
         Module1.NamaSirkus = ComboBoxNamaSirkus.Text
-
+        Module1.SirkusId = ComboBoxNamaSirkus.SelectedValue
         Label3.Text = ComboBoxNamaSirkus.Text
 
-
-
-        ' Separate between get image and sinopsis due to conn timeoout
-        cmd.Parameters.Clear()
         cmd.CommandText = "SELECT poster from sirkus WHERE sirkusId = @id"
         cmd.Parameters.AddWithValue("@id", ComboBoxNamaSirkus.SelectedValue)
         Dim img As Image
         Dim ImageData As Byte()
         ImageData = DirectCast(cmd.ExecuteScalar(), Byte())
+        cmd.Parameters.Clear()
 
         Using ms As New MemoryStream(ImageData)
             img = Image.FromStream(ms)
@@ -163,41 +162,30 @@ Public Class FormPesan
 
     'Tab Page 2
     Private Function Hitung_Harga() As Integer
-
-        Module1.BanyakTiket = BanyakTiket.Value
-        Module1.JenisTiket = JenisTiket.SelectedValue
-        Dim total As Integer
         Dim harga As Integer
-        cmd.Parameters.Clear()
-        cmd.CommandText = "select * from bangku_sirkus where bangku = @bangku"
+        cmd.CommandText = "select harga from bangku_sirkus where bangku_sirkusId = @bangku"
         cmd.Parameters.AddWithValue("@bangku", JenisTiket.SelectedValue)
-        reader = cmd.ExecuteReader()
-
-        While reader.Read()
-            If reader.HasRows = True Then
-                harga = reader.GetValue(4)
-                total = harga * BanyakTiket.Value
-            End If
-        End While
-        LabelTotalHarga.Text = total.ToString
-        reader.Close()
-        Module1.TotalHarga = LabelTotalHarga.Text
-        'cmd.Parameters.Clear()
-        '"EXEC SisaKursi @bangkuId=1"
-
-        Return (LabelTotalHarga.Text)
+        harga = Convert.ToInt32(cmd.ExecuteScalar())
+        cmd.Parameters.Clear()
+        HargaTiket = harga
+        Return (harga)
     End Function
 
 
 
     Private Sub JenisTiket_SelectedIndexChanged(sender As Object, e As EventArgs) Handles JenisTiket.SelectedIndexChanged
-        Module1.JenisTiket = JenisTiket.SelectedValue
-        LabelTotalHarga.Text = Hitung_Harga()
+        Dim Total = (Hitung_Harga() * BanyakTiket.Value)
+        LabelTotalHarga.Text = Total.ToString
+        Module1.TotalHarga = Total
+        Module1.JenisTiket = JenisTiket.Text
+        Module1.BangkuId = JenisTiket.SelectedValue
     End Sub
 
     Private Sub BanyakTiket_ValueChanged(sender As Object, e As EventArgs) Handles BanyakTiket.ValueChanged
+        Dim Total = (HargaTiket * BanyakTiket.Value)
+        LabelTotalHarga.Text = Total.ToString
         Module1.BanyakTiket = BanyakTiket.Value
-        LabelTotalHarga.Text = Hitung_Harga()
+        Module1.TotalHarga = Total
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -220,6 +208,16 @@ Public Class FormPesan
             FormPembayaran.Show()
         End If
 
+
+    End Sub
+
+    Private Sub FormPesan_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        cmd.Cancel()
+        conn.Close()
+    End Sub
+
+
+    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
 
     End Sub
 End Class
