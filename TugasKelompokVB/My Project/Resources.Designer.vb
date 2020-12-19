@@ -213,6 +213,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property captcha() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("captcha", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property corteo1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("corteo1", resourceCulture)
