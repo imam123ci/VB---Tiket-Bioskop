@@ -72,4 +72,8 @@
             Label3.Text = My.Resources.String25
         End If
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

@@ -80,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="DashboardKB.Designer.vb">
+      <DependentUpon>DashboardKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="details.Designer.vb">
       <DependentUpon>details.vb</DependentUpon>
     </Compile>
@@ -144,6 +150,12 @@
     <Compile Include="SplashScreen1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateKB.Designer.vb">
+      <DependentUpon>UpdateKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="video.Designer.vb">
       <DependentUpon>video.vb</DependentUpon>
     </Compile>
@@ -152,6 +164,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DashboardKB.resx">
+      <DependentUpon>DashboardKB.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="details.resx">
       <DependentUpon>details.vb</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateKB.resx">
+      <DependentUpon>UpdateKB.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="video.resx">
       <DependentUpon>video.vb</DependentUpon>

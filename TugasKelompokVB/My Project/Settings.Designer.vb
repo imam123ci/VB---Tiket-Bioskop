@@ -13,17 +13,17 @@ Option Explicit On
 
 
 Namespace My
-    
-    <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0"),  _
-     Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
+
+    <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0"),
+     Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
-        
-        Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()),MySettings)
-        
+
+        Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()), MySettings)
+
 #Region "My.Settings Auto-Save Functionality"
-#If _MyType = "WindowsForms" Then
+#If _MYTYPE = "WindowsForms" Then
     Private Shared addedHandler As Boolean
 
     Private Shared addedHandlerLockObject As New Object
@@ -36,11 +36,11 @@ Namespace My
     End Sub
 #End If
 #End Region
-        
+
         Public Shared ReadOnly Property [Default]() As MySettings
             Get
-                
-#If _MyType = "WindowsForms" Then
+
+#If _MYTYPE = "WindowsForms" Then
                If Not addedHandler Then
                     SyncLock addedHandlerLockObject
                         If Not addedHandler Then
@@ -53,28 +53,49 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=62.171.164.73;Initial Catalog=sirkusdb;Persist Security Info=True;Use"& _ 
-            "r ID=bigpho;Password=bigphovera;Context Connection=False")>  _
+
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=62.171.164.73;Initial Catalog=sirkusdb;Persist Security Info=True;Use" &
+            "r ID=bigpho;Password=bigphovera;Context Connection=False")>
         Public ReadOnly Property sirkusdbConnectionString() As String
             Get
-                Return CType(Me("sirkusdbConnectionString"),String)
+                Return CType(Me("sirkusdbConnectionString"), String)
+            End Get
+        End Property
+
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-FERBIAN;Initial Catalog=sirkusdb;Integrated Security=True")>
+        Public ReadOnly Property sirkusdbConnectionString() As String
+            Get
+                Return CType(Me("sirkusdbConnectionString"), String)
+            End Get
+        End Property
+
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=62.171.164.73;Initial Catalog=sirkusdb;Persist Security Info=True;Use" &
+            "r ID=bigpho;Password=bigphovera")>
+        Public ReadOnly Property sirkusdbConnectionString1() As String
+            Get
+                Return CType(Me("sirkusdbConnectionString1"), String)
             End Get
         End Property
     End Class
 End Namespace
 
 Namespace My
-    
-    <Global.Microsoft.VisualBasic.HideModuleNameAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
+
+    <Global.Microsoft.VisualBasic.HideModuleNameAttribute(),
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+     Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>
     Friend Module MySettingsProperty
-        
-        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
+
+        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>
         Friend ReadOnly Property Settings() As Global.TugasKelompokVB.My.MySettings
             Get
                 Return Global.TugasKelompokVB.My.MySettings.Default
