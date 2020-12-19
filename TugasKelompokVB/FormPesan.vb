@@ -7,7 +7,6 @@ Public Class FormPesan
     Private reader As SqlDataReader
     Private results As String
     Private varbinary As Byte()
-    Private photoStream As New MemoryStream()
 
     Private Sub FormPesan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'SirkusdbDataSet.sirkus' table. You can move, or remove it, as needed.
@@ -38,22 +37,28 @@ Public Class FormPesan
         Module1.Waktu = Label1.Text
     End Sub
     Private Sub ComboBoxNamaSirkus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNamaSirkus.SelectedIndexChanged
-        Module1.NamaSirkus = ComboBoxNamaSirkus.SelectedValue
-        Label3.Text = ComboBoxNamaSirkus.SelectedValue
+        Module1.NamaSirkus = ComboBoxNamaSirkus.Text
 
-        'cmd.CommandText = "SELECT TOP 1 poster from sirkus ORDER BY id DESC "
-        'Dim img As Image
-        'Create new variable to store byte data
-        'Dim ImageData As Byte()
-        'ImageData = DirectCast(cmd.ExecuteScalar(), Byte())
-        'Using ms As New MemoryStream(ImageData)
-        'img = Image.FromStream(ms)
-        'End Using
-        'PictureBox1.Image = img
+        Label3.Text = ComboBoxNamaSirkus.Text
+
+
+
+        ' Separate between get image and sinopsis due to conn timeoout
+        cmd.Parameters.Clear()
+        cmd.CommandText = "SELECT poster from sirkus WHERE sirkusId = @id"
+        cmd.Parameters.AddWithValue("@id", ComboBoxNamaSirkus.SelectedValue)
+        Dim img As Image
+        Dim ImageData As Byte()
+        ImageData = DirectCast(cmd.ExecuteScalar(), Byte())
+
+        Using ms As New MemoryStream(ImageData)
+            img = Image.FromStream(ms)
+        End Using
+        PictureBox1.Image = img
 
         cmd.Parameters.Clear()
-        cmd.CommandText = "select * from sirkus where judul = @judul"
-        cmd.Parameters.AddWithValue("@judul", ComboBoxNamaSirkus.SelectedValue)
+        cmd.CommandText = "select * from sirkus where sirkusId = @id"
+        cmd.Parameters.AddWithValue("@id", ComboBoxNamaSirkus.SelectedValue)
         reader = cmd.ExecuteReader()
 
         While reader.Read()
@@ -63,47 +68,48 @@ Public Class FormPesan
         End While
         reader.Close()
 
-        'cmd.Parameters.Clear()
-        'Dim sSQL As String = "select concat(hari,', ',jamMulai,'-',jamSelesai) from waktu_sirkus  join sirkus ON sirkus.sirkusId = waktu_sirkus.sirkusId WHERE sirkus.sirkusId = waktu_sirkus.sirkusId "
-        'cmd.CommandText = sSQL
-        'reader = cmd.ExecuteReader()
-        'Waktu.Text = sSQL
-        'reader.Close()
+        cmd.Parameters.Clear()
+        cmd.CommandText = "select concat(hari,', ',CONVERT(VARCHAR(8),jamMulai,108),'-',CONVERT(VARCHAR(8),jamSelesai,108)) from waktu_sirkus where sirkusId = @id"
+        cmd.Parameters.AddWithValue("@id", ComboBoxNamaSirkus.SelectedValue)
+        Dim jam As String = Convert.ToString(cmd.ExecuteScalar())
+        Waktu.Text = jam
 
-        If Module1.NamaSirkus = "KÀ" Then
-            PictureBox1.Image = My.Resources._5ka
-            Waktu.Text = "Saturday – Wednesday 10:00 AM – 10:00 PM" & vbCrLf & "Thursday – Friday 10:00 AM – 5:00 PM"
-        End If
+        reader.Close()
 
-        If Module1.NamaSirkus = "Michael Jackson ONE" Then
-            PictureBox1.Image = My.Resources._4mj
-            Waktu.Text = "Friday - Tuesday 10:00 AM – 10:00 PM" & vbCrLf & "Wednesday and Thursday 12:30 PM – 6:00 PM"
-        End If
+        'If Module1.NamaSirkus = "KÀ" Then
+        '    PictureBox1.Image = My.Resources._5ka
 
-        If Module1.NamaSirkus = "The Beatles LOVE" Then
-            PictureBox1.Image = My.Resources._3thebeatles
-            Waktu.Text = "Tuesday – Saturday 10AM – 10PM" & vbCrLf & "Sunday – Monday 10AM – 5PM"
-        End If
+        'End If
 
-        If Module1.NamaSirkus = "KOOZA" Then
-            PictureBox1.Image = My.Resources._1kooza
-            Waktu.Text = "Thursday 12:00 PM to 6:00 PM" & vbCrLf & "Friday 10:00 AM to 6:00 PM"
-        End If
+        'If Module1.NamaSirkus = "Michael Jackson ONE" Then
+        '    PictureBox1.Image = My.Resources._4mj
 
-        If Module1.NamaSirkus = "Corteo" Then
-            PictureBox1.Image = My.Resources._2corteo
-            Waktu.Text = "Saturday - Wednesday 10:00 AM – 10:00 PM"
-        End If
+        'End If
 
-        If Module1.NamaSirkus = "O" Then
-            PictureBox1.Image = My.Resources._7o
-            Waktu.Text = "Wednesday - Sunday 9:00 AM – 10:00 PM" & vbCrLf & "Monday - Tuesday 9:00 AM – 5:00 PM"
-        End If
+        'If Module1.NamaSirkus = "The Beatles LOVE" Then
+        '    PictureBox1.Image = My.Resources._3thebeatles
 
-        If Module1.NamaSirkus = "Alegria" Then
-            PictureBox1.Image = My.Resources._6alegria
-            Waktu.Text = "Friday - Tuesday 10:00 AM - 10:30 PM"
-        End If
+        'End If
+
+        'If Module1.NamaSirkus = "KOOZA" Then
+        '    PictureBox1.Image = My.Resources._1kooza
+
+        'End If
+
+        'If Module1.NamaSirkus = "Corteo" Then
+        '    PictureBox1.Image = My.Resources._2corteo
+
+        'End If
+
+        'If Module1.NamaSirkus = "O" Then
+        '    PictureBox1.Image = My.Resources._7o
+
+        'End If
+
+        'If Module1.NamaSirkus = "Alegria" Then
+        '    PictureBox1.Image = My.Resources._6alegria
+        '    Waktu.Text = "Friday - Tuesday 10:00 AM - 10:30 PM"
+        'End If
 
 
     End Sub

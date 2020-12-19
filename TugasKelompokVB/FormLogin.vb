@@ -9,4 +9,9 @@
         FormPesan.Show()
 
     End Sub
+
+    Private Sub btnlogin_Click(sender As Object, e As EventArgs) Handles btnlogin.Click
+        UpdateKB.Show()
+        Me.Hide()
+    End Sub
 End Class
