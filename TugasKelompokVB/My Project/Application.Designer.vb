@@ -27,7 +27,7 @@ Namespace My
             Me.IsSingleInstance = False
             Me.EnableVisualStyles = False
             Me.SaveMySettingsOnExit = True
-            Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
+            Me.ShutdownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>

@@ -5851,7 +5851,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -6262,7 +6262,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -6600,7 +6600,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -6898,7 +6898,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -7336,7 +7336,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -7710,7 +7710,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -8076,7 +8076,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -8580,7 +8580,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -8993,7 +8993,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -9362,7 +9362,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -9558,7 +9558,7 @@ Namespace sirkusdbDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString
+            Me._connection.ConnectionString = Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
@@ -9660,7 +9660,7 @@ Namespace sirkusdbDataSetTableAdapters
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.System.Data.IDbCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString)
+            CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(Global.TugasKelompokVB.My.MySettings.Default.sirkusdbConnectionString1)
             CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.Register"
             CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
             CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
